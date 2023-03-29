@@ -1,6 +1,7 @@
-import axios from 'axios'
+import axios from "axios"
 
-const API_URL = '/api/goals/'
+const API_URL =
+  "https://goal-setting-mern-backend-tanuj-hycn.onrender.com/api/goals/"
 
 // Create new goal
 const createGoal = async (goalData, token) => {
@@ -16,7 +17,7 @@ const createGoal = async (goalData, token) => {
 }
 
 // Get user goals
-const getGoals = async (token) => {
+const getGoals = async token => {
   const config = {
     headers: {
       Authorization: `Bearer ${token}`,
